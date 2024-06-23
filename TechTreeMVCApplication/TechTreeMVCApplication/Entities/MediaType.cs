@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using TechTreeMVCApplication.Interfaces;
 
 namespace TechTreeMVCApplication.Entities
 {
-	public class MediaType
+	public class MediaType : IPrimaryProperties
 	{
         public int Id { get; set; }
 

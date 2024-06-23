@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TechTreeMVCApplication.Data;
 using TechTreeMVCApplication.Entities;
+using TechTreeMVCApplication.Extensions;
 
 namespace TechTreeMVCApplication.Areas.Admin.Controllers
 {
@@ -25,17 +26,23 @@ namespace TechTreeMVCApplication.Areas.Admin.Controllers
         {
 
             List<CategoryItem> list = await (from catItem in _context.CategoryItems
+                                             join contentItem in _context.Content
+                                             on catItem.Id equals contentItem.CategoryItem.Id
+                                             into gj
+                                             from subContent in gj.DefaultIfEmpty()
                                              where catItem.CategoryId == categoryId
                                              select new CategoryItem
                                              {
-                                                 Id = catItem.CategoryId,
+                                                 Id = catItem.Id,
                                                  Title = catItem.Title,
                                                  Description = catItem.Description,
                                                  DateTimeItemReleased = catItem.DateTimeItemReleased,
-                                                 CategoryId = catItem.CategoryId,
-                                                 MediaTypeId = catItem.MediaTypeId
+                                                 CategoryId = categoryId,
+                                                 MediaTypeId = catItem.MediaTypeId,
+                                                 ContentId = (subContent != null) ? subContent.Id : 0
                                              }).ToListAsync();
-
+                               
+            ViewBag.CategoryId = categoryId;
 
             return View(list);
         }
@@ -59,9 +66,16 @@ namespace TechTreeMVCApplication.Areas.Admin.Controllers
         }
 
         // GET: Admin/CategoryItem/Create
-        public IActionResult Create()
+        public async Task<IActionResult> Create(int categoryId)
         {
-            return View();
+            List<MediaType> mediaType = await _context.MediaType.ToListAsync();
+
+            CategoryItem categoryItem = new CategoryItem
+            {
+                CategoryId = categoryId,
+                MediaTypes = mediaType.ConvertToSelectList(0)
+            };
+             return View(categoryItem);
         }
 
         // POST: Admin/CategoryItem/Create
@@ -75,8 +89,12 @@ namespace TechTreeMVCApplication.Areas.Admin.Controllers
             {
                 _context.Add(categoryItem);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index),new {categoryId = categoryItem.CategoryId});
             }
+
+            //List<MediaType> mediaType = await _context.MediaType.ToListAsync();
+            //categoryItem.MediaTypes = mediaType.ConvertToSelectList(categoryItem.MediaTypeId);
+
             return View(categoryItem);
         }
 
@@ -88,11 +106,16 @@ namespace TechTreeMVCApplication.Areas.Admin.Controllers
                 return NotFound();
             }
 
+            List<MediaType> mediaTypes = await _context.MediaType.ToListAsync();
+
             var categoryItem = await _context.CategoryItems.FindAsync(id);
             if (categoryItem == null)
             {
                 return NotFound();
             }
+
+            categoryItem.MediaTypes = mediaTypes.ConvertToSelectList(categoryItem.MediaTypeId);
+
             return View(categoryItem);
         }
 
@@ -126,7 +149,7 @@ namespace TechTreeMVCApplication.Areas.Admin.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index), new {categoryId = categoryItem.CategoryId});
             }
             return View(categoryItem);
         }
@@ -157,7 +180,7 @@ namespace TechTreeMVCApplication.Areas.Admin.Controllers
             var categoryItem = await _context.CategoryItems.FindAsync(id);
             _context.CategoryItems.Remove(categoryItem);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index), new {categoryId = categoryItem.CategoryId});
         }
 
         private bool CategoryItemExists(int id)

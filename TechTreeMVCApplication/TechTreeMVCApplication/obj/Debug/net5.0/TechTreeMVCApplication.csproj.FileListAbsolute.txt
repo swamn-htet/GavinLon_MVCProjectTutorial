@@ -169,6 +169,8 @@ C:\Study\YouTube\GavinLon\MVCTutorial\GavinLon_MVCProjectTutorial\TechTreeMVCApp
 C:\Study\YouTube\GavinLon\MVCTutorial\GavinLon_MVCProjectTutorial\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Details.cshtml.g.cs
 C:\Study\YouTube\GavinLon\MVCTutorial\GavinLon_MVCProjectTutorial\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Edit.cshtml.g.cs
 C:\Study\YouTube\GavinLon\MVCTutorial\GavinLon_MVCProjectTutorial\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
+C:\Study\YouTube\GavinLon\MVCTutorial\GavinLon_MVCProjectTutorial\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\Content\Create.cshtml.g.cs
+C:\Study\YouTube\GavinLon\MVCTutorial\GavinLon_MVCProjectTutorial\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\Content\Edit.cshtml.g.cs
 C:\Study\YouTube\GavinLon\MVCTutorial\GavinLon_MVCProjectTutorial\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_Layout.cshtml.g.cs
 C:\Study\YouTube\GavinLon\MVCTutorial\GavinLon_MVCProjectTutorial\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 C:\Study\YouTube\GavinLon\MVCTutorial\GavinLon_MVCProjectTutorial\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
