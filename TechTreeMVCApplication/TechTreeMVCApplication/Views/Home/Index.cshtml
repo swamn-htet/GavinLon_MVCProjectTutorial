@@ -1,8 +1,35 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@using TechTreeMVCApplication.Data
+@inject SignInManager<ApplicationUser> SignInManager
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@if(SignInManager.IsSignedIn(User))
+{
+    <div class="text-center">
+        <h1 class="display-4">Welcome To Tech Tree</h1>
+    </div>
+}
+else
+{
+    <div class="text-center">
+        <h1 class="display-4">Not Logged In</h1>
+    </div>
+}
+
+<div class="modal fade" id="UserLoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <partial name="_UserLoginPartial">
 </div>
+<div class="modal fade" id="UserRegistrationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <partial name="_UserRegistrationPartial" />
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        await Html.RenderPartialAsync("_AuthScriptsPartial");
+    }
+
+}

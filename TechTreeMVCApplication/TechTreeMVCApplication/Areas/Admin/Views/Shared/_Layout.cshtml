@@ -6,7 +6,9 @@
     <title>@ViewData["Title"] - TechTreeMVCApplication</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-</head>
+    @*<link href="~/lib/jquery-ui-1.13.3.custom/jquery-ui.min.css" rel="stylesheet" />*@
+    <link href="~/lib/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet" />
+ </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
@@ -21,9 +23,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        @* <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li> *@
+                        </li>
                         <partial name="_AdminMenuPartial" />
                     </ul>
                     <partial name="_LoginPartial" />
@@ -45,6 +47,8 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    @*<script src="~/lib/jquery-ui-1.13.3.custom/jquery-ui.min.js"></script>*@
+    <script src="~/lib/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+ @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

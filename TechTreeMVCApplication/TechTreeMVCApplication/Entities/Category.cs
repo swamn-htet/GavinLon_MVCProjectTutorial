@@ -9,12 +9,15 @@ namespace TechTreeMVCApplication.Entities
 	{
         public int Id { get; set; }
 
-		[Required]
+		[Required(ErrorMessage ="Hey Fuck Off!")]
 		[StringLength(200,MinimumLength =2)]
-		public string Title { get; set; }
+        public string Title { get; set; }
+
+
         public string Description { get; set; }
 
 		[Required]
+		[Display(Name ="Thumbnail Image Path")]
         public string ThumbnailImagePath { get; set; }
 
 		[ForeignKey("CategoryId")]

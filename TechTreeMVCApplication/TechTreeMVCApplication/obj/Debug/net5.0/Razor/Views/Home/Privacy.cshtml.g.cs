@@ -26,8 +26,15 @@ using TechTreeMVCApplication.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Study\YouTube\GavinLon\MVCTutorial\GavinLon_MVCProjectTutorial\TechTreeMVCApplication\TechTreeMVCApplication\Views\_ViewImports.cshtml"
+using TechTreeMVCApplication.Entities;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"0e00a4445b214863ea51c8985fae1970b43e932712216fa047faf3062bb23445", @"/Views/Home/Privacy.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"c0f8621e4247854f6a4faeab1b613ec19132eaf89b4e3efbd1e804c83549f364", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"c053d7545cae9b8f47f94a68469c8f3fba5fef4fc6b829c2decb9053555b1e6e", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Home_Privacy : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable

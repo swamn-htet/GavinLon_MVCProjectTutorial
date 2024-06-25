@@ -92,8 +92,8 @@ namespace TechTreeMVCApplication.Areas.Admin.Controllers
                 return RedirectToAction(nameof(Index),new {categoryId = categoryItem.CategoryId});
             }
 
-            //List<MediaType> mediaType = await _context.MediaType.ToListAsync();
-            //categoryItem.MediaTypes = mediaType.ConvertToSelectList(categoryItem.MediaTypeId);
+            List<MediaType> mediaType = await _context.MediaType.ToListAsync();
+            categoryItem.MediaTypes = mediaType.ConvertToSelectList(categoryItem.MediaTypeId);
 
             return View(categoryItem);
         }
