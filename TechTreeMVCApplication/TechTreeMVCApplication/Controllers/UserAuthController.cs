@@ -45,7 +45,7 @@ namespace TechTreeMVCApplication.Controllers
                 {
                     ModelState.AddModelError(string.Empty, "Invalid login attempt");
                 }
-            
+             
             }
             return PartialView("_UserLoginPartial",loginModel);
         }
