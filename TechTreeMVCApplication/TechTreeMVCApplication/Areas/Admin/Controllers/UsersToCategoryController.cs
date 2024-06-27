@@ -77,6 +77,8 @@ namespace TechTreeMVCApplication.Areas.Admin.Controllers
                 }
             }
 
+            System.Threading.Thread.Sleep(1000);
+
             usersCategoryListModel.Users = await GetAllUsers();
 
             return PartialView("_UsersListViewPartial", usersCategoryListModel);

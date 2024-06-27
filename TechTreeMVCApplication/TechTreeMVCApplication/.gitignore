@@ -1,4 +1,7 @@
-﻿# Ignore Visual Studio temporary files, build results, and
+﻿# Ignore Visual Studio temporary and solution files
+../.vs/
+
+# Ignore Visual Studio temporary files, build results, and
 # user-specific files
 .vs/
 .vscode/

@@ -8146,11 +8146,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Study\\YouTube\\GavinLon\\MVCTutorial\\GavinLon_MVCProjectTutorial\\TechTreeMVCApplication\\TechTreeMVCApplication\\TechTreeMVCApplication.csproj",
+      "projectUniqueName": "C:\\Study\\YouTube\\GavinLon\\MVCTutorial\\TechTreeMVCApplication\\TechTreeMVCApplication\\TechTreeMVCApplication\\TechTreeMVCApplication.csproj",
       "projectName": "TechTreeMVCApplication",
-      "projectPath": "C:\\Study\\YouTube\\GavinLon\\MVCTutorial\\GavinLon_MVCProjectTutorial\\TechTreeMVCApplication\\TechTreeMVCApplication\\TechTreeMVCApplication.csproj",
+      "projectPath": "C:\\Study\\YouTube\\GavinLon\\MVCTutorial\\TechTreeMVCApplication\\TechTreeMVCApplication\\TechTreeMVCApplication\\TechTreeMVCApplication.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Study\\YouTube\\GavinLon\\MVCTutorial\\GavinLon_MVCProjectTutorial\\TechTreeMVCApplication\\TechTreeMVCApplication\\obj\\",
+      "outputPath": "C:\\Study\\YouTube\\GavinLon\\MVCTutorial\\TechTreeMVCApplication\\TechTreeMVCApplication\\TechTreeMVCApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
