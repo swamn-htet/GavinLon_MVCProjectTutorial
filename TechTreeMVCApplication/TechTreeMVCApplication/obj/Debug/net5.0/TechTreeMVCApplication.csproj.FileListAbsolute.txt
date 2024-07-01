@@ -388,12 +388,14 @@ C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplicat
 C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Views\Content\Index.cshtml.g.cs
 C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Views\Shared\_AdminMenuPartial.cshtml.g.cs
 C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Views\Shared\_AuthScriptsPartial.cshtml.g.cs
 C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Views\Shared\_DateScriptsPartial.cshtml.g.cs
+C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Views\Shared\_DefaultHomePageContentPartial.cshtml.g.cs
 C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Views\Shared\_UserLoginPartial.cshtml.g.cs

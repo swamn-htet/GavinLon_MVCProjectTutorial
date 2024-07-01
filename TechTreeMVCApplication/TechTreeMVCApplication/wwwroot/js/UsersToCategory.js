@@ -1,11 +1,11 @@
 ﻿$(function () {
-
+        
     var errorText = "An error has occurred. An administrator has been notified. Please try again later";
-
+        
     $("button[name='SaveSelectedUsers']").prop('disabled', true);
-
+        
     $('select').on('change', function () {
-
+        
         var url = "/Admin/UsersToCategory/GetUsersForCategory?categoryId=" + this.value;
 
         if (this.value != 0) {
@@ -23,16 +23,16 @@
                     }
                 }
             );
-
+        
         }
         else {
             $("button[name='SaveSelectedUsers']").prop('disabled', true);
             $("input[type=checkbox]").prop("checked", false);
             $("input[type=checkbox]").prop("disabled", true);
         }
-
-    });
-
+        
+    }); 
+        
     $('#SaveSelectedUsers').click(function () {
 
         var url = "/Admin/UsersToCategory/SaveSelectedUsers";
