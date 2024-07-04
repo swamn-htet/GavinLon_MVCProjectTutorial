@@ -420,3 +420,6 @@ C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplicat
 C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\TechTreeMVCApplication.pdb
 C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\TechTreeMVCApplication.genruntimeconfig.cache
 C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\ref\TechTreeMVCApplication.dll
+C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Views\Shared\_DisplayCardRowPartial.cshtml.g.cs
+C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_RUDButtonsPartial.cshtml.g.cs
+C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_CreateButtonPartial.cshtml.g.cs
