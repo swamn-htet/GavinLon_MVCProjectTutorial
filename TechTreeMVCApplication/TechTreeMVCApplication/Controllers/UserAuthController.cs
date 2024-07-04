@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using TechTreeMVCApplication.Data;
+using TechTreeMVCApplication.Entities;
 using TechTreeMVCApplication.Models;
 
 namespace TechTreeMVCApplication.Controllers
@@ -95,6 +96,11 @@ namespace TechTreeMVCApplication.Controllers
 
                     await _sigInManager.SignInAsync(user, isPersistent: false);
 
+                    if(registrationModel.CategoryId != 0)
+                    {
+                       await AddCategoryToUser(user.Id, registrationModel.CategoryId);
+                    }
+
                     return PartialView("_UserRegistrationPartial",registrationModel);
                 }
 
@@ -115,12 +121,23 @@ namespace TechTreeMVCApplication.Controllers
             return false;
         }
 
+
+
         private void AddErrorToModelState(IdentityResult result)
         {
             foreach(var error in result.Errors)
             {
                 ModelState.AddModelError(string.Empty, error.Description);
             }
+        }
+
+        private async Task AddCategoryToUser(string userId, int categoryId)
+        {
+            UserCategory userCategory = new UserCategory(); 
+            userCategory.UserId = userId;
+            userCategory.CategoryId = categoryId;
+            _context.UserCategory.Add(userCategory);
+            await _context.SaveChangesAsync();
         }
 
     }

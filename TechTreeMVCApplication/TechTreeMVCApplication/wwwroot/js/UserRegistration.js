@@ -1,5 +1,7 @@
 ﻿$(function () {
 
+
+
     $("#UserRegistrationModal").on('hidden.bs.modal', function (e) {
         $("#UserRegistrationModal input[name='CategoryId']").val('0');
     });

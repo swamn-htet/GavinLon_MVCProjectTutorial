@@ -41,9 +41,11 @@ namespace TechTreeMVCApplication.Models
         [RegularExpression(@"(\s*\(?0\d{4}\)?\s*\d{6}\s*)|(\s*\(?0\d{3}\)?\s*\d{3}\s*\d{4}\s*)")]
         [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
+
         public bool AcceptUserAgreement { get; set; }
 
-
         public string RegistrationInValid { get; set; }
+
+        public int CategoryId { get; set; }
     }
 }

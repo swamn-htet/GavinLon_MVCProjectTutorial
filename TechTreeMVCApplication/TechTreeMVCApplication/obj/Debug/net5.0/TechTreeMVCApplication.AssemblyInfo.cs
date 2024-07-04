@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TechTreeMVCApplication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f2321864b3914c3e28e4b545723f061f053084d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b4308e676410edf901b5e4b3ca8f0d8e35caba0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TechTreeMVCApplication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TechTreeMVCApplication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

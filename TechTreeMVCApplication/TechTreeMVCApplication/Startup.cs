@@ -35,6 +35,9 @@ namespace TechTreeMVCApplication
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
+
+            services.AddScoped<IDataFunctions, DataFunctions>();
+             
             services.AddRazorPages();
         }
 

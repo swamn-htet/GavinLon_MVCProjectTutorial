@@ -34,6 +34,13 @@ using TechTreeMVCApplication.Entities;
 #line hidden
 #nullable disable
 #nullable restore
+#line 4 "C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\Views\_ViewImports.cshtml"
+using TechTreeMVCApplication.Comparers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\Views\Shared\_LoginPartial.cshtml"
 using Microsoft.AspNetCore.Identity;
 
@@ -48,7 +55,7 @@ using TechTreeMVCApplication.Data;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"9addf94f7f56e272b24e32c993a706a79a468be54cee78a640f80f335fbc355f", @"/Views/Shared/_LoginPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"c053d7545cae9b8f47f94a68469c8f3fba5fef4fc6b829c2decb9053555b1e6e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"af72abbe80e044da62ce81763c121d42f62faf095bd9bf124ebabe073c264186", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared__LoginPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -108,7 +115,7 @@ using TechTreeMVCApplication.Data;
 #line hidden
 #nullable disable
             WriteLiteral("        <li class=\"nav-item\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9addf94f7f56e272b24e32c993a706a79a468be54cee78a640f80f335fbc355f8835", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9addf94f7f56e272b24e32c993a706a79a468be54cee78a640f80f335fbc355f9089", async() => {
                 WriteLiteral("Hello ");
 #nullable restore
 #line 11 "C:\Study\YouTube\GavinLon\MVCTutorial\TechTreeMVCApplication\TechTreeMVCApplication\TechTreeMVCApplication\Views\Shared\_LoginPartial.cshtml"
@@ -136,7 +143,7 @@ using TechTreeMVCApplication.Data;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9addf94f7f56e272b24e32c993a706a79a468be54cee78a640f80f335fbc355f10869", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9addf94f7f56e272b24e32c993a706a79a468be54cee78a640f80f335fbc355f11123", async() => {
                 WriteLiteral("\r\n                <button type=\"submit\" class=\"nav-link btn btn-link text-dark\">Logout</button>\r\n            ");
             }
             );
@@ -182,7 +189,7 @@ using TechTreeMVCApplication.Data;
 #line hidden
 #nullable disable
             WriteLiteral("        <li class=\"nav-item\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9addf94f7f56e272b24e32c993a706a79a468be54cee78a640f80f335fbc355f14227", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9addf94f7f56e272b24e32c993a706a79a468be54cee78a640f80f335fbc355f14481", async() => {
                 WriteLiteral("<i class=\"fas fa-user mr-1 text-info\"></i>Register");
             }
             );
@@ -203,7 +210,7 @@ using TechTreeMVCApplication.Data;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9addf94f7f56e272b24e32c993a706a79a468be54cee78a640f80f335fbc355f15964", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9addf94f7f56e272b24e32c993a706a79a468be54cee78a640f80f335fbc355f16218", async() => {
                 WriteLiteral("<i class=\"fas fa-sign-in-alt mr-1 text-info\"></i>Login");
             }
             );
